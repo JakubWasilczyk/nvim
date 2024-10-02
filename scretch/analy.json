@@ -1,0 +1,127 @@
+{
+  "status": "succeeded",
+  "createdDateTime": "2024-06-13T17:07:11Z",
+  "lastUpdatedDateTime": "2024-06-13T17:07:15Z",
+  "analyzeResult": {
+    "apiVersion": "2023-07-31",
+    "modelId": "document_for_piko_2023_12_29",
+    "stringIndexType": "utf16CodeUnit",
+    "content": "",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "angle": 0,
+        "width": 8.2639,
+        "height": 11.6806,
+        "unit": "inch",
+        "words": [],
+        "lines": [],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      },
+      {
+        "pageNumber": 2,
+        "angle": 0,
+        "width": 8.2639,
+        "height": 11.6806,
+        "unit": "inch",
+        "words": [],
+        "lines": [],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      },
+      {
+        "pageNumber": 3,
+        "angle": 0,
+        "width": 8.2639,
+        "height": 11.6806,
+        "unit": "inch",
+        "words": [],
+        "lines": [],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      },
+      {
+        "pageNumber": 4,
+        "angle": 0.26330599188804626,
+        "width": 8.2639,
+        "height": 11.6806,
+        "unit": "inch",
+        "words": [],
+        "lines": [],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "docType": "insurance",
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [0, 0, 8.2639, 0, 8.2639, 11.6806, 0, 11.6806]
+          }
+        ],
+        "confidence": 0.973,
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      },
+      {
+        "docType": "certificate_of_conformity",
+        "boundingRegions": [
+          {
+            "pageNumber": 2,
+            "polygon": [0, 0, 8.2639, 0, 8.2639, 11.6806, 0, 11.6806]
+          }
+        ],
+        "confidence": 0.001,
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      },
+      {
+        "docType": "registration_document",
+        "boundingRegions": [
+          {
+            "pageNumber": 3,
+            "polygon": [0, 0, 8.2639, 0, 8.2639, 11.6806, 0, 11.6806]
+          },
+          {
+            "pageNumber": 4,
+            "polygon": [0, 0, 8.2639, 0, 8.2639, 11.6806, 0, 11.6806]
+          }
+        ],
+        "confidence": 0.001,
+        "spans": [
+          {
+            "offset": 0,
+            "length": 0
+          }
+        ]
+      }
+    ]
+  }
+}

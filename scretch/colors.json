@@ -1,0 +1,28 @@
+{
+  "primary": {
+    "shade_50": "#FEFCE8",
+    "shade_100": "#FEF9C3",
+    "shade_200": "#FEF08A",
+    "shade_300": "#FDE047",
+    "shade_400": "#FACC15",
+    "shade_500": "#EAB308",
+    "shade_600": "#CA8A04",
+    "shade_700": "#A16207",
+    "shade_800": "#854D0E",
+    "shade_900": "#713F12",
+    "shade_950": "#422006"
+  },
+  "on_primary": {
+    "shade_50": "#422006",
+    "shade_100": "#422006",
+    "shade_200": "#422006",
+    "shade_300": "#422006",
+    "shade_400": "#422006",
+    "shade_500": "#422006",
+    "shade_600": "#FEFCE8",
+    "shade_700": "#FEFCE8",
+    "shade_800": "#FEFCE8",
+    "shade_900": "#FEFCE8",
+    "shade_950": "#FEFCE8"
+  }
+}
