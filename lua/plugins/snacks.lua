@@ -8,6 +8,10 @@ return {
           "**/.env.*",
           ".env",
           ".env.*",
+
+          "**/.cargo",
+          "**/.cargo/*",
+          "**/config.toml",
         },
         exclude = {},
       },

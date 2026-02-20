@@ -8,10 +8,27 @@ return {
     },
   },
   {
+    "rebelot/kanagawa.nvim",
+    lazy = true,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    lazy = true,
+  },
+  {
+    "sainnhe/sonokai",
+    lazy = true,
+    priority = 1000,
+    config = function()
+      vim.g.sonokai_style = "shusia"
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "sonokai",
       colorscheme = "monokai-pro",
-      -- colorscheme = "tokyonight-storm",
     },
   },
 }
