@@ -1,55 +1,58 @@
 return {
-  --   -- 1. Setup Minuet for background code completion
-  --   {
-  --     "milanglacier/minuet-ai.nvim",
-  --     dependencies = { "nvim-lua/plenary.nvim" },
-  --     config = function()
-  --       require("minuet").setup({
-  --         provider = "gemini",
-  --         provider_options = {
-  --           gemini = {
-  --             model = "gemini-2.5-flash",
-  --             stream = true,
-  --           },
-  --         },
-  --       })
-  --     end,
-  --   },
-  --   {
-  --     "saghen/blink.cmp",
-  --     dependencies = { "milanglacier/minuet-ai.nvim" },
-  --     opts = {
-  --       sources = {
-  --         default = { "lsp", "path", "snippets", "buffer", "minuet" },
-  --         providers = {
-  --           minuet = {
-  --             name = "minuet",
-  --             module = "minuet.blink",
-  --             score_offset = 8,
-  --           },
+  -- {
+  --   "milanglacier/minuet-ai.nvim",
+  --   dependencies = { "nvim-lua/plenary.nvim" },
+  --   config = function()
+  --     require("minuet").setup({
+  --       provider = "gemini",
+  --       provider_options = {
+  --         gemini = {
+  --           model = "gemini-2.5-flash",
+  --           stream = true,
   --         },
   --       },
+  --     })
+  --   end,
+  -- },
+  -- {
+  --   "saghen/blink.cmp",
+  --   dependencies = { "milanglacier/minuet-ai.nvim" },
+  --   opts = {
+  --     sources = {
+  --       default = { "lsp", "path", "snippets", "buffer", "minuet" },
+  --       providers = {
+  --         minuet = {
+  --           name = "minuet",
+  --           module = "minuet.blink",
+  --           async = true,
+  --           timeout_ms = 3000,
+  --           score_offset = 50,
+  --         },
+  --       },
+  --     },
+  --     completion = { trigger = { prefetch_on_insert = false } },
+  --   },
+  -- },
+  -- {
+  --   "olimorris/codecompanion.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  --   opts = {
+  --     strategies = {
+  --       chat = { adapter = "gemini" },
+  --       inline = { adapter = "gemini" },
+  --     },
+  --     display = {
+  --       action_palette = { provider = "default" },
   --     },
   --   },
-  --   {
-  --     "olimorris/codecompanion.nvim",
-  --     dependencies = {
-  --       "nvim-lua/plenary.nvim",
-  --       "nvim-treesitter/nvim-treesitter",
-  --     },
-  --     opts = {
-  --       strategies = {
-  --         chat = { adapter = "gemini" },
-  --         inline = { adapter = "gemini" },
-  --       },
-  --       display = {
-  --         action_palette = { provider = "default" },
-  --       },
-  --     },
-  --     keys = {
-  --       { "<leader>cy", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "CodeCompanion Actions" },
-  --       { "<leader>ch", "<cmd>CodeCompanionChat Toggle<cr>", mode = { "n", "v" }, desc = "CodeCompanion Chat" },
-  --       { "ga", "<cmd>CodeCompanionChat Add<cr>", mode = "v", desc = "Add to CodeCompanion Chat" },
-  --     },
+  --   keys = {
+  --     { "<leader>cy", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "CodeCompanion Actions" },
+  --     { "<leader>ch", "<cmd>CodeCompanionChat Toggle<cr>", mode = { "n", "v" }, desc = "CodeCompanion Chat" },
+  --     { "ga", "<cmd>CodeCompanionChat Add<cr>", mode = "v", desc = "Add to CodeCompanion Chat" },
+  --     { "<leader>cj", ":<C-u>'<,'>CodeCompanion ", mode = "v", desc = "Prompt for visual selection" },
   --   },
+  -- },
 }
